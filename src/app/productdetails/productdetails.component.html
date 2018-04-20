@@ -1,0 +1,17 @@
+<div *ngIf="product">
+	<h2>{{product.name}} details:</h2>
+	<div>
+		<label>id: </label> {{product.id}}
+	</div>
+	<div>
+		<label>Name: </label> {{product.name}}
+	</div>
+	<div>
+		<label>Quantity: </label> {{product.quantity}}
+	</div>
+	<div>
+		<label>Price: </label> {{product.price}}
+	</div>
+		
+	<button class="btn btn-danger" (click)="delete()">Delete</button>
+</div>

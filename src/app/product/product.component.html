@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let prod of products"
+		[class.selected]="prod === selectedProduct" (click)="onSelect(prod)">
+		<h4>{{prod.id}} - {{prod.name}} {{prod.quantity}} {{prod.price}}</h4> 
+	</li>
+</ul>
+<app-productdetails [product]="selectedProduct"></app-productdetails>
